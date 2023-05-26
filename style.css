@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    height: 100%;
+  }
+  
+
+.navbar {
+    position: fixed;
+    top: 0;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #519FDC;
+}
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.navbar .logo {
+    font-size:xx-large;
+    font-weight: bolder;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    gap: 30px;
+}
+
+body {
+    position: relative;
+    background-color: #e7f4f8fe;
+    padding-top: 60px;
+    min-height: 100%;
+  padding-bottom: 50px;
+}
+
+.main {
+    margin-bottom: 50px;
+}
+
+
+
+.card {
+    background-color: white;
+    text-align: center;
+    height: 380px;
+    min-width: 300px;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    padding-top: 10%;
+    width: 25%;
+    height: auto;
+}
+
+.card h1 {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    color: rgb(112, 111, 111);
+    font-size:x-large;
+    text-align: center;
+}
+
+.card h2 {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    color: darkgray;
+    font-size: medium;
+    text-align: center;
+}
+
+.card button {
+    color: rgb(112, 111, 111);
+    font-weight: bold;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 50px;
+    height: 10%;
+    width: 40%;
+}
+
+.card button:hover {
+    background-color:#519FDC ;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    height: 10%;
+    width: 40%;
+
+}
+
+.card button:hover + hr {
+    border-color: transparent;
+}
+
+.card hr {
+    border-color:rgb(202, 202, 202);
+    opacity: 0.5;
+    width: 30%;
+    margin-bottom: 7.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7.5%;
+}
+
+
+.grid {
+    max-width: 1200px;
+    width: 80%;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+
+}
+ 
+
+@media screen and (max-width:480px) {
+
+    .grid {
+        max-width: 1200px;
+        width: 80%;
+        height: 100px;
+        margin: auto;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+
+    }
+
+    .card {
+        background-color: white;
+        text-align: center;
+        height: 400px;
+        width: 250px;
+    }
+    
+}
+
+
+@media screen and (max-width:768px) {
+
+    .grid {
+        max-width: 1200px;
+        width: 80%;
+        height: 100px;
+        margin: auto;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .card {
+        background-color: white;
+        text-align: center;
+        height: 400px;
+        width: 250px;
+    }
+    
+}
+
+
+
+
+   
+    
